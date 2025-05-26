@@ -10,7 +10,7 @@ const Header = () => {
             <div>
                 <h1 className='font-bold text-3xl'>Port<span className='text-[#3b82f6]'>Folio</span></h1>
             </div>
-            <div className={`bg-[#0f172a] absolute md:static top-16 w-full md:w-auto text-center transition-all duration-300 ease-in-out opacity-0 ${isopen ? 'block opacity-400' : 'hidden'} md:block md:opacity-100`}>
+            <div className={`bg-[#0f172a] absolute md:static top-17 w-full md:w-auto text-center transition-all duration-300 ease-in-out opacity-0 ${isopen ? 'block opacity-400' : 'hidden'} md:block md:opacity-100`}>
                 <ul className='md:flex'>
                     <li className='px-3 md:py-0 py-3'><a href="#home">Home</a></li>
                     <li className='px-3 md:py-0 py-3'><a href="#about">About</a></li>
