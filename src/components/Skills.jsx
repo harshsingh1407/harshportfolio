@@ -14,6 +14,9 @@ const Skills = () => {
                 <button className='bg-[#1e293b] w-[180px] border-1 text-white text-2xl p-3 font-semibold m-2 rounded-xl hover:scale-105 hover:border-[#06b6d4] hover:text-[#06b6d4]'>Tailwind</button>
                 <button className='bg-[#1e293b] w-[180px] border-1 text-white text-2xl p-3 font-semibold m-2 rounded-xl hover:scale-105 hover:border-[#f7df1e] hover:text-[#f7df1e]'>JavaScript</button>
                 <button className='bg-[#1e293b] w-[180px] border-1 text-white text-2xl p-3 font-semibold m-2 rounded-xl hover:scale-105 hover:border-[#61DAFB] hover:text-[#61DAFB]'>ReactJS</button>
+                <button className='bg-[#1e293b] w-[180px] border-1 text-white text-2xl p-3 font-semibold m-2 rounded-xl hover:scale-105 hover:border-[#3c873a] hover:text-[#3c873a]'>NodeJS</button>
+                <button className='bg-[#1e293b] w-[180px] border-1 text-white text-2xl p-3 font-semibold m-2 rounded-xl hover:scale-105 hover:border-[#333333] hover:text-[#333333]'>ExpressJS</button>
+                <button className='bg-[#1e293b] w-[180px] border-1 text-white text-2xl p-3 font-semibold m-2 rounded-xl hover:scale-105 hover:border-[#47A248] hover:text-[#47A248]'>MongoDB</button>
                 <button className='bg-[#1e293b] w-[180px] border-1 text-white text-2xl p-3 font-semibold m-2 rounded-xl hover:scale-105 hover:border-[#F1502F] hover:text-[#F1502F]'>Git</button>
                 <button className='bg-[#1e293b] w-[180px] border-1 text-white text-2xl p-3 font-semibold m-2 rounded-xl hover:scale-105 hover:border-[#4078c0] hover:text-[#4078c0]'>Github</button>
             </div>

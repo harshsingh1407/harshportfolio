@@ -6,9 +6,16 @@ import cello from '../assets/cello.png'
 import rockpaperscissor from '../assets/rockpaperscissor.png'
 import scenestream from '../assets/scenestream.png'
 import tictactoe from '../assets/tictactoe.png'
+import utube from '../assets/utube.png'
 
 const Projects = () => {
     const projects = [
+    {
+      name: "UTube",
+      tech: "HTML, CSS, Tailwind, JavaScript & React",
+      image: utube,
+      link: "https://utube14.netlify.app/",
+    },
     {
       name: "SceneStream",
       tech: "HTML, CSS, Tailwind, JavaScript & React",
