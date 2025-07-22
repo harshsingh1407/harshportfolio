@@ -78,7 +78,7 @@ const Projects = () => {
           <img
             src={project.image}
             alt={project.name}
-            className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+            className="w-full h-64  transition-transform duration-300 group-hover:scale-105"
           />
           <div className="absolute inset-0 bg-[#1e293b] bg-opacity-60 flex flex-col justify-center items-center text-white opacity-0 group-hover:opacity-100 transition duration-300">
             <h3 className="text-xl font-bold">{project.name}</h3>
