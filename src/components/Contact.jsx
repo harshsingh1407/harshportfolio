@@ -64,7 +64,7 @@ export default function Contact() {
                         {/* Email */}
                         <div className='flex items-center space-x-3 text-gray-300 hover:text-cyan-400 transition-colors'>
                             <Mail size={20} className='text-cyan-500'/>
-                            <a href="mailto:your_email@example.com" className='text-lg'>harshsingh1407@example.com</a> 
+                            <a href="harshsingh95941@gmail.com" className='text-lg'>harshsingh95941@example.com</a> 
                         </div>
 
                         {/* Social Links */}

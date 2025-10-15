@@ -1,14 +1,14 @@
-import React from 'react'
+import React from 'react';
 // Agar aapne lucide-react ya koi icon library install ki hai, toh aap in icons ka upyog kar sakte hain:
 // import { Linkedin, Github } from 'lucide-react'; 
 // (Agar aapne Font Awesome use kiya hai, toh woh theek hai.)
 
 const About = () => {
   return (
-    // Background ko Home page ke dark theme se match kiya gaya hai
-    <div id='about' className='bg-slate-900 py-16 md:py-28 px-4'>
+    // 'bg-slate-900' क्लास हटा दी गई है ताकि कणों का एनिमेटेड बैकग्राउंड दिख सके।
+    <div id='about' className='py-16 md:py-28 px-4'>
         
-        {/* Main Content Container - Centered and max-width for better readability */}
+        {/* Main Content Container - Centered and max-width */}
         <div 
             data-aos="zoom-in" 
             className='max-w-4xl mx-auto'
@@ -28,27 +28,31 @@ const About = () => {
                 </h1>
             </div>
 
-            {/* Content Card */}
+            {/* Content Card - Transparent/Blurry background for particle effect */}
             <div className='
-                bg-slate-800 
+                bg-slate-800/80 backdrop-blur-sm // हल्का पारदर्शी बैकग्राउंड और ब्लर इफ़ेक्ट
                 p-8 md:p-12 
                 rounded-xl 
                 shadow-2xl shadow-cyan-900/50 
                 border-t-4 border-cyan-500
             '>
                 
-                {/* Paragraph Section */}
+                {/* Paragraph Section with New Description (Bootstrap removed) */}
                 <div className='mb-8'>
                     <p className='
                         text-gray-300 text-lg md:text-xl 
-                        leading-relaxed // Line spacing for readability
-                        text-left // Text ko center se left align kiya gaya hai, jo zyada professional lagta hai
+                        leading-relaxed 
+                        text-left 
                     '>
-                        Hi, I'm <strong className='text-white font-bold'>Harsh</strong>, a passionate web developer focused on crafting clean, **responsive**, and user-friendly digital experiences. I specialize in the modern web stack, including <strong className='text-cyan-400'>HTML, CSS, Tailwind, JavaScript, and React</strong>, and I thrive on turning innovative ideas into robust web applications.
+                        Hi, I'm <strong className='text-white font-bold'>Harsh Singh</strong> — a passionate <strong className='text-cyan-400'>Full-Stack Web Developer</strong> focused on crafting clean, responsive, and user-friendly digital experiences. I specialize in the modern web stack, including <strong className='text-cyan-400'>HTML, CSS, Tailwind CSS, JavaScript, React, Next.js, Node.js, and Express</strong>.
                         
                         <br /><br />
                         
-                        My toolkit includes hands-on experience with **Bootstrap** and proficient use of **Git/GitHub** for version control. I'm actively seeking opportunities to collaborate on meaningful projects, gain professional experience, and continuously **grow** as a developer in a challenging environment.
+                        I enjoy turning creative ideas into robust, scalable web applications that deliver seamless performance and great user experiences. My toolkit also includes proficient use of <strong className='text-cyan-400'> Git/GitHub </strong> for version control and collaboration.
+                        
+                        <br /><br />
+                        
+                        I’m always eager to learn new technologies, collaborate on meaningful projects, and grow as a developer in a challenging, fast-paced environment.
                     </p>
                 </div>
 

@@ -99,7 +99,7 @@ const Projects = () => {
                         text-center 
                         uppercase tracking-widest
                     '>
-                        My Creative Portfolio
+                        My Projects
                         <span className='block w-20 h-1 bg-cyan-600 mx-auto mt-2 rounded-full'></span>
                     </h1>
                 </div>

@@ -9,6 +9,7 @@ import Projects from './components/Projects'
 import Certificate from './components/Certificate'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import ParticlesBackground from './components/ParticlesBackground';
 // import { Route, Routes } from 'react-router-dom';
 
 const App = () => {
@@ -22,6 +23,7 @@ const App = () => {
 
   return (
     <div>
+      <ParticlesBackground />
       <Header/>
       <Home/>
       <About/>

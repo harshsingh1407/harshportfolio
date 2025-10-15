@@ -21,8 +21,8 @@ const Header = () => {
         // Header Wrapper - Fixed position, Reduced Height
         <header className='
             fixed top-0 left-0 w-full z-50 
-            bg-slate-900/95 backdrop-blur-sm 
-            border-b border-cyan-800/50 
+             backdrop-blur-sm 
+            
             shadow-xl shadow-slate-950/70
         '>
             <div className='
