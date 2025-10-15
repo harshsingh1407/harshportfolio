@@ -1,20 +1,12 @@
 import React from 'react';
-// Agar aapne lucide-react ya koi icon library install ki hai, toh aap in icons ka upyog kar sakte hain:
-// import { Linkedin, Github } from 'lucide-react'; 
-// (Agar aapne Font Awesome use kiya hai, toh woh theek hai.)
 
 const About = () => {
   return (
-    // 'bg-slate-900' क्लास हटा दी गई है ताकि कणों का एनिमेटेड बैकग्राउंड दिख सके।
     <div id='about' className='py-16 md:py-28 px-4'>
-        
-        {/* Main Content Container - Centered and max-width */}
         <div 
             data-aos="zoom-in" 
             className='max-w-4xl mx-auto'
         >
-            
-            {/* Title Section */}
             <div className='mb-12'>
                 <h1 className='
                     text-cyan-400 text-4xl md:text-5xl font-extrabold 
@@ -23,12 +15,10 @@ const About = () => {
                     relative
                 '>
                     About Me
-                    {/* Subtle underline effect */}
                     <span className='block w-20 h-1 bg-cyan-600 mx-auto mt-2 rounded-full'></span>
                 </h1>
             </div>
 
-            {/* Content Card - Transparent/Blurry background for particle effect */}
             <div className='
                 bg-slate-800/80 backdrop-blur-sm // हल्का पारदर्शी बैकग्राउंड और ब्लर इफ़ेक्ट
                 p-8 md:p-12 
@@ -36,8 +26,6 @@ const About = () => {
                 shadow-2xl shadow-cyan-900/50 
                 border-t-4 border-cyan-500
             '>
-                
-                {/* Paragraph Section with New Description (Bootstrap removed) */}
                 <div className='mb-8'>
                     <p className='
                         text-gray-300 text-lg md:text-xl 
@@ -56,10 +44,8 @@ const About = () => {
                     </p>
                 </div>
 
-                {/* Social Buttons Section */}
                 <div className='flex justify-start pt-4 border-t border-slate-700/50'>
                     
-                    {/* LinkedIn Button */}
                     <a 
                         href="https://www.linkedin.com/in/harshsingh1407/" 
                         target='_blank' 
@@ -77,8 +63,6 @@ const About = () => {
                             <span>LinkedIn</span>
                         </button>
                     </a>
-                    
-                    {/* GitHub Button */}
                     <a 
                         href="https://github.com/harshsingh1407" 
                         target='_blank' 

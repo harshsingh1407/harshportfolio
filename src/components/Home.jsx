@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import { Download, TerminalSquare } from 'lucide-react'; // TerminalSquare icon projects ke liye use kiya gaya hai
+import { Download, TerminalSquare } from 'lucide-react'; 
 import profileImage from '../assets/profile_pic.png'
 import resume from '../assets/Harsh_Resume.pdf';
 
 const Home = () => {
     const [typedText, setTypedText] = useState("");
-    // Full-Stack प्रोफ़ाइल के लिए टेक्स्ट को अपडेट किया गया
     const fullText = "A passionate Full-Stack Developer building robust, scalable, and user-centric web applications.";
 
     useEffect(() => {
@@ -17,17 +16,14 @@ const Home = () => {
             } else {
                 clearInterval(typing);
             }
-        }, 45); // Typing speed
+        }, 45); 
 
         return () => clearInterval(typing);
     }, [fullText]);
 
-    // आपको यह सुनिश्चित करना होगा कि आपके 'Projects' कॉम्पोनेंट का id 'projects' है।
     const PROJECTS_SECTION_ID = "#projects"; 
     
-    // Resume Link: 'resume' import ho chuka hai
     
-    // Function to scroll to the Projects section
     const scrollToProjects = () => {
         document.querySelector(PROJECTS_SECTION_ID)?.scrollIntoView({
             behavior: 'smooth'
@@ -35,8 +31,7 @@ const Home = () => {
     };
 
     return (
-        // Animated Gradient Background और full-screen height
-        // Home कॉम्पोनेंट से भी कोई ठोस bg-color हटा दें, ताकि particles दिखें
+
         <div 
             id='home' 
             className='min-h-screen flex justify-center items-center 
@@ -48,14 +43,11 @@ const Home = () => {
                         font-inter
             '
         >
-            {/* Main Content Container */}
             <div className='z-10 px-6 py-20 max-w-7xl w-full mx-auto md:py-32'> 
                 <div className='flex flex-col-reverse md:flex-row items-center justify-between gap-12 md:gap-20'>
 
-                    {/* =========== Left Column: Text & Buttons =========== */}
                     <div className='w-full md:w-1/2 text-center md:text-left pt-10 md:pt-0'> 
                         
-                        {/* Heading Section */}
                         <div className='mb-4 md:mb-6'>
                             <h1 className='text-4xl sm:text-5xl lg:text-7xl font-extrabold tracking-tight text-gray-200'>
                                 Hi, I'm <span className='
@@ -65,7 +57,6 @@ const Home = () => {
                             </h1>
                         </div>
 
-                        {/* Typewriter Text Section */}
                         <div className='mb-8 h-20 md:h-20 flex items-center justify-center md:justify-start px-2'>
                             <p 
                                 id='typewriter' 
@@ -78,10 +69,8 @@ const Home = () => {
                             </p>
                         </div>
 
-                        {/* Action Button Section (Two Buttons) */}
                         <div className='flex flex-col sm:flex-row justify-center md:justify-start mt-8 gap-4 md:gap-6'>
                             
-                            {/* 1. Resume Download Button (Primary CTA) */}
                             <a 
                                 href={resume} 
                                 download="Harsh_Singh_Resume.pdf"
@@ -107,9 +96,8 @@ const Home = () => {
                                 </button>
                             </a>
                             
-                            {/* 2. View Projects Button (Secondary CTA - Replaced LinkedIn) */}
                             <button 
-                                onClick={scrollToProjects} // Projects सेक्शन पर स्क्रॉल करने के लिए
+                                onClick={scrollToProjects}
                                 className='
                                     w-full sm:w-auto
                                     // Secondary Button Style (Subtle Dark)
@@ -132,7 +120,6 @@ const Home = () => {
                         </div>
                     </div>
 
-                    {/* =========== Right Column: Profile Image =========== */}
                     <div className='w-full md:w-1/2 flex justify-center md:justify-end'>
                         <div className='
                             w-64 h-64 md:w-96 md:h-96 
@@ -148,9 +135,8 @@ const Home = () => {
                                 src={profileImage} 
                                 alt="Harsh Singh Profile" 
                                 className='w-full h-full object-cover transition-all duration-500'
-                                // Fallback/Error handling for image
                                 onError={(e) => {
-                                    e.target.onerror = null; // prevents infinite loop
+                                    e.target.onerror = null; 
                                     e.target.src = 'https://placehold.co/400x400/1e293b/a5f3fc?text=Image+Not+Found'; 
                                 }}
                             />

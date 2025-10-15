@@ -1,24 +1,19 @@
 import React, { useCallback } from "react";
 import Particles from "react-tsparticles";
-import { loadSlim } from "tsparticles-slim"; // या loadFull
+import { loadSlim } from "tsparticles-slim";
 
 const ParticlesBackground = () => {
-    // यह फ़ंक्शन tsparticles इंजन को लोड करता है।
     const particlesInit = useCallback(async (engine) => {
-        // Slim वर्जन छोटे फ़ाइल आकार के लिए बुनियादी इफ़ेक्ट लोड करता है।
         await loadSlim(engine);
     }, []);
 
     const particlesLoaded = useCallback(async (container) => {
-        // कंसोल में देखने के लिए (वैकल्पिक)
-        // console.log(container);
     }, []);
     
-    // कणों के प्रभाव के लिए कॉन्फ़िगरेशन
     const options = {
         background: {
             color: {
-                value: "#1a1a2e", // CSS में दिया गया गहरा नीला/काला रंग
+                value: "#1a1a2e",
             },
         },
         fpsLimit: 120,
@@ -26,11 +21,11 @@ const ParticlesBackground = () => {
             events: {
                 onHover: {
                     enable: true,
-                    mode: "grab", // माउस के पास आने पर कणों को जोड़ना
+                    mode: "grab",
                 },
                 onClick: {
                     enable: true,
-                    mode: "push", // क्लिक करने पर कणों को धकेलना
+                    mode: "push", 
                 },
                 resize: true,
             },
@@ -48,14 +43,14 @@ const ParticlesBackground = () => {
         },
         particles: {
             number: {
-                value: 80, // कणों की संख्या
+                value: 80,
                 density: {
                     enable: true,
                     value_area: 800,
                 },
             },
             color: {
-                value: "#ffffff", // कणों का रंग (सफेद)
+                value: "#ffffff",
             },
             links: {
                 color: "#ffffff",
@@ -66,14 +61,14 @@ const ParticlesBackground = () => {
             },
             move: {
                 enable: true,
-                speed: 2, // गति
+                speed: 2, 
                 direction: "none",
                 outModes: {
                     default: "out",
                 },
             },
             size: {
-                value: { min: 1, max: 3 }, // कणों का आकार
+                value: { min: 1, max: 3 }, 
                 random: true,
             },
             opacity: {
@@ -91,10 +86,10 @@ const ParticlesBackground = () => {
             loaded={particlesLoaded}
             options={options}
             style={{
-                position: "fixed", // इसे पृष्ठभूमि में स्थिर करता है
+                position: "fixed", 
                 top: 0,
                 left: 0,
-                zIndex: -1, // सबसे नीचे रखें
+                zIndex: -1, 
                 width: "100%",
                 height: "100%"
             }}

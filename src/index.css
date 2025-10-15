@@ -1,15 +1,9 @@
 @import "tailwindcss";
 
-/* src/index.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Baaki sabhi custom ya third-party styles iske neeche aayenge */
-
-/* ==================================== */
-/* 1. Global Reset (वैश्विक रीसेट)      */
-/* ==================================== */
 html, 
 body, 
 #root, 
@@ -19,24 +13,15 @@ body,
   padding: 0;
 }
 
-/* ==================================== */
-/* 2. Content Container (सामग्री कंटेनर) */
-/* ==================================== */
-/* पोर्टफोलियो की मुख्य सामग्री को कणों के ऊपर लाने के लिए */
-/* **ध्यान दें**: आपको अपनी App.jsx में सामग्री को इस 'portfolio-content' div में डालना होगा। */
 .portfolio-content {
-    position: relative; /* z-index के लिए आवश्यक */
-    z-index: 2; /* कणों (z-index: -1) से ऊपर */
-    color: white; /* टेक्स्ट का रंग */
+    position: relative; 
+    z-index: 2; 
+    color: white; 
     text-align: center;
-    padding-top: 20vh; /* पेज के केंद्र में लाने के लिए */
-    overflow-y: auto; /* यदि सामग्री लंबी है, तो यह स्क्रॉल होगी */
+    padding-top: 20vh; 
+    overflow-y: auto; 
     height: 100%;
 }
-
-/* आप यहाँ अपनी सामग्री के लिए अन्य स्टाइल जोड़ सकते हैं */
 .portfolio-content h1 {
     font-size: 3em;
 }
-
-/* आपके मौजूदा global styles (जैसे कि आपके components को कोई base styles) भी यहीं हो सकते हैं */

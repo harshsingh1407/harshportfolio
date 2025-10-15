@@ -1,17 +1,11 @@
 import React from 'react';
-// Zaroori: Ensure you have lucide-react installed for the icon
 import { Award, ExternalLink } from 'lucide-react'; 
 
-// NOTE: Since external image imports are not supported in this environment, 
-// I'm replacing them with a single placeholder URL to make the component runnable.
-// In your local setup, ensure you use your original image imports.
 
 import htmlcertificate from '../assets/html.jpeg';
 import csscertificate from '../assets/css.jpeg';
 import javascriptcertificate from '../assets/javascript.jpg';
 import reactcertificate from '../assets/reactcertificate.jpg';
-// const PLACEHOLDER_IMAGE = "https://placehold.co/400x300/1e293b/a5f3fc?text=Certificate+Image";
-
 
 const Certificate = () => {
     const certificates = [
@@ -39,15 +33,12 @@ const Certificate = () => {
             publisher: "HackerRank",
             viewLink: "#"
         },
-        // Adding more data for better grid demonstration
     ];
 
     return (
-        // Unified Dark Background and Spacing
         <div id='certificate' className='bg-slate-950 py-16 md:py-28 px-4 font-inter'>
             <div data-aos="fade-up" className='max-w-7xl mx-auto'>
                 
-                {/* Title Section (Modern Gradient) */}
                 <div className='mb-16'>
                     <h1 className='
                         text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-teal-500 
@@ -60,7 +51,6 @@ const Certificate = () => {
                     </h1>
                 </div>
 
-                {/* Certificate Grid Container */}
                 <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8'>
                     {certificates.map((cert, index) => (
                         <div 
@@ -77,7 +67,6 @@ const Certificate = () => {
                                 perspective-1000 // Enable 3D effects
                             '
                         >
-                            {/* Project Image Container */}
                             <div className='relative overflow-hidden'>
                                 <img 
                                     src={cert.image} 
@@ -93,7 +82,6 @@ const Certificate = () => {
                                 />
                             </div>
                             
-                            {/* Certificate Info (Always Visible below image) */}
                             <div className='p-5 border-t border-slate-800'>
                                 <h3 className='text-xl font-bold text-gray-100 mb-1 leading-tight'>{cert.cname}</h3>
                                 <p className='text-sm text-cyan-400 font-semibold flex items-center space-x-2 mt-2'>
@@ -102,7 +90,6 @@ const Certificate = () => {
                                 </p>
                             </div>
 
-                            {/* FULL CARD OVERLAY (Appears on hover) */}
                             <a 
                                 href={cert.viewLink}
                                 target="_blank"
@@ -120,7 +107,6 @@ const Certificate = () => {
                                 <div className='p-6 text-center'>
                                     <h3 className="text-3xl font-black text-cyan-400 mb-4 tracking-wide">{cert.cname}</h3>
                                     
-                                    {/* Action Button */}
                                     <button 
                                         className='
                                             bg-cyan-600 hover:bg-cyan-500 

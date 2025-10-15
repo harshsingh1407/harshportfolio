@@ -1,7 +1,5 @@
 import React from 'react';
-// Zap icon का अब कोई उपयोग नहीं है, इसलिए इसे हटा दिया गया है
 
-// --- Skill Data ---
 const SKILLS_DATA = [
     { name: 'HTML5', color: 'orange-500' },
     { name: 'CSS3', color: 'blue-500' },
@@ -18,14 +16,11 @@ const SKILLS_DATA = [
 ];
 
 const Skills = () => {
-    // कणों का एनीमेशन आपके पूरे बैकग्राउंड पर दिखना चाहिए, 
-    // इसलिए यहाँ से 'bg-slate-950' हटा दें।
+
     return (
-        // 'bg-slate-950' यहाँ से हटा दिया गया है
         <div id='skills' className='px-6 py-20 md:py-32'> 
             <div className='max-w-7xl mx-auto'>
                 
-                {/* Section Header */}
                 <div data-aos="fade-up" className="mb-12">
                     <h2 className='
                         text-4xl md:text-5xl font-extrabold text-center 
@@ -40,7 +35,6 @@ const Skills = () => {
                     </p>
                 </div>
                 
-                {/* Skills Grid */}
                 <div 
                     data-aos="fade-up" 
                     data-aos-delay="200"
@@ -63,27 +57,21 @@ const Skills = () => {
                                     transform hover:scale-[1.05] 
                                 `}
                                 style={{
-                                    // यहाँ CSS वेरिएबल्स हैं। आप इन्हें index.css में भी डाल सकते हैं।
                                     '--color-orange-500': '#f97316',
                                     '--color-blue-500': '#3b82f6',
-                                    // ... बाकी सभी कलर वेरिएबल्स ...
                                 }}
-                                // HOVER EFFECTS:
                                 onMouseEnter={(e) => {
-                                    // 1. टेक्स्ट को ब्रांड कलर दें
                                     e.currentTarget.style.color = brandColorVar;
-                                    // 2. सॉफ्ट ग्लो/शेडो इफ़ेक्ट (सबसे बड़ा सुधार)
                                     e.currentTarget.style.boxShadow = `
                                         0 0 5px 1px ${brandColorVar}C0, /* हल्का इनर ग्लो */
                                         0 0 15px 3px ${brandColorVar}80  /* बड़ा आउटर ग्लो */
                                     `; 
-                                    // 3. बैकग्राउंड को थोड़ा डार्क करें
-                                    e.currentTarget.style.backgroundColor = '#1e293b'; // slate-800
+                                    e.currentTarget.style.backgroundColor = '#1e293b'; 
                                 }}
                                 onMouseLeave={(e) => {
-                                    e.currentTarget.style.color = '#cbd5e1'; // Revert to slate-300
+                                    e.currentTarget.style.color = '#cbd5e1';
                                     e.currentTarget.style.boxShadow = 'none';
-                                    e.currentTarget.style.backgroundColor = 'rgba(30, 41, 59, 0.5)'; // Revert to slate-800/50
+                                    e.currentTarget.style.backgroundColor = 'rgba(30, 41, 59, 0.5)';
                                 }}
                             >
                                 <span className={`transition-colors duration-300`}>

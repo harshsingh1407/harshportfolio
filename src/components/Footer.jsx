@@ -1,10 +1,7 @@
 import React from 'react';
-// import { Heart } from 'lucide-react'; 
-
 const Footer = () => {
   return (
-    // 'bg-transparent' (या केवल 'bg-black/50' जैसा कुछ) जोड़ें 
-    // और 'relative' जोड़कर इसे z-index की क्षमता दें
+
     <footer className='
         relative 
         bg-transparent 
@@ -19,7 +16,6 @@ const Footer = () => {
     '>
         <div className='max-w-7xl mx-auto px-6 text-center text-sm md:text-base'>
             
-            {/* Copyright Text */}
             <p className='font-normal'>
                 © {new Date().getFullYear()} <strong className='text-gray-200'>Harsh Singh</strong>. All rights reserved.
             </p>

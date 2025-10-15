@@ -10,14 +10,13 @@ import Certificate from './components/Certificate'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import ParticlesBackground from './components/ParticlesBackground';
-// import { Route, Routes } from 'react-router-dom';
 
 const App = () => {
 
   useEffect(() => {
     AOS.init({
-      duration: 1000, // animation duration
-      once: true,     // whether animation should happen only once
+      duration: 1000, 
+      once: true,
     });
   }, []);
 

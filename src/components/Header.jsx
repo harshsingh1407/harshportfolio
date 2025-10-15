@@ -18,7 +18,6 @@ const Header = () => {
     };
 
     return (
-        // Header Wrapper - Fixed position, Reduced Height
         <header className='
             fixed top-0 left-0 w-full z-50 
              backdrop-blur-sm 
@@ -30,15 +29,12 @@ const Header = () => {
                 flex justify-between items-center 
                 text-white
             '>
-                
-                {/* Logo Section */}
                 <div>
                     <h1 className='font-extrabold text-2xl md:text-3xl'>
                         Port<span className='text-cyan-400'>Folio</span>
                     </h1>
                 </div>
 
-                {/* Desktop Navigation */}
                 <nav className='hidden md:block'>
                     <ul className='flex space-x-7 text-lg font-medium'>
                         {navLinks.map((link) => (
@@ -64,7 +60,6 @@ const Header = () => {
                     </ul>
                 </nav>
 
-                {/* Mobile Menu Button */}
                 <div className='md:hidden'>
                     <button 
                         onClick={() => setIsOpen(!isOpen)} 
@@ -74,7 +69,6 @@ const Header = () => {
                     </button>
                 </div>
 
-                {/* Mobile Menu Overlay/Sidebar */}
                 <div className={`
                     fixed top-16 right-0 h-full w-64 // TOP FIX: h-16 ke hisaab se top-16
                     bg-slate-900 
