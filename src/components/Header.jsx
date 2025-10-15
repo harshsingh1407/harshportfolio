@@ -20,12 +20,11 @@ const Header = () => {
     return (
         <header className='
             fixed top-0 left-0 w-full z-50 
-             backdrop-blur-sm 
-            
+            bg-slate-850 
             shadow-xl shadow-slate-950/70
         '>
             <div className='
-                max-w-7xl mx-auto px-6 h-16 // HEIGHT FIX: h-16 (64px) final height
+                max-w-7xl mx-auto px-6 h-16 
                 flex justify-between items-center 
                 text-white
             '>
@@ -69,9 +68,11 @@ const Header = () => {
                     </button>
                 </div>
 
+                {/* Mobile Sidebar - ismein blur effect joda gaya hai */}
                 <div className={`
-                    fixed top-16 right-0 h-full w-64 // TOP FIX: h-16 ke hisaab se top-16
-                    bg-slate-900 
+                    fixed top-16 right-0 h-full w-full
+                    bg-slate-750
+                    backdrop-blur-2xl
                     shadow-2xl shadow-slate-950/90
                     transition-transform duration-300 ease-in-out
                     z-50
@@ -82,14 +83,14 @@ const Header = () => {
                         {navLinks.map((link) => (
                             <li 
                                 key={link.name} 
-                                className='border-b border-slate-800/50 last:border-b-0'
+                                className='flex justify-center border-b border-slate-800/50 last:border-b-0'
                             >
                                 <a 
                                     href={link.href} 
                                     onClick={handleLinkClick}
                                     className='
                                         block py-3 
-                                        text-gray-300 text-xl font-semibold 
+                                        text-black text-2xl font-bold 
                                         hover:text-cyan-400 hover:bg-slate-800/50 
                                         transition-colors duration-300
                                     '
