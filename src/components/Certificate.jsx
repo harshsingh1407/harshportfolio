@@ -4,7 +4,7 @@ import { Award, ExternalLink } from 'lucide-react';
 
 import htmlcertificate from '../assets/html.jpeg';
 import csscertificate from '../assets/css.jpeg';
-import javascriptcertificate from '../assets/javascript.jpg';
+import javascriptcertificate from '../assets/javascript.png';
 import reactcertificate from '../assets/reactcertificate.jpg';
 
 const Certificate = () => {
@@ -13,25 +13,25 @@ const Certificate = () => {
             cname: "HTML Fundamentals",
             image: htmlcertificate,
             publisher: "Great Learning",
-            viewLink: "#" 
+            viewLink: "https://www.mygreatlearning.com/certificate/YQZTCCAU?referrer_code=GLCT-LWEZTAGA" 
         },
         {
             cname: "CSS Essentials",
             image: csscertificate,
             publisher: "Great Learning",
-            viewLink: "#"
+            viewLink: "https://www.mygreatlearning.com/certificate/FJNKRZAG?referrer_code=GLCT-LWEZTAGA"
         },
         {
             cname: "JavaScript Intermediate",
             image: javascriptcertificate,
             publisher: "Cisco",
-            viewLink: "#"
+            viewLink: "https://www.netacad.com/certificates?issuanceId=ebf5148b-b17b-40de-bf4e-2ff42ebf9f30"
         },
         {
             cname: "React Developer Skill",
             image: reactcertificate,
             publisher: "HackerRank",
-            viewLink: "#"
+            viewLink: "https://www.hackerrank.com/certificates/iframe/2a160f92a90d"
         },
     ];
 

@@ -5,12 +5,13 @@ import weather from '../assets/weather.png';
 import quickcart from '../assets/quickcart.png';
 import haldiram from '../assets/haldiram.png';
 import myflix from '../assets/myflix.jpg';
-import cello from '../assets/cello.png';
+// import cello from '../assets/cello.png';
 import rockpaperscissor from '../assets/rockpaperscissor.png';
 import scenestream from '../assets/scenestream.png';
 import tictactoe from '../assets/tictactoe.png';
 import utube from '../assets/utube.png';
 import interviewedge from '../assets/interviewedge.jpg';
+import uber from '../assets/uber.png'
 
 const projectsData = [
     {
@@ -22,11 +23,11 @@ const projectsData = [
         category: "MERN Apps",
     },
     {
-        name: "UTube (React Clone)",
+        name: "UTube (YouTube Clone)",
         tech: "HTML, Tailwind, JS & React",
         image: utube,
         liveLink: "https://utube14.netlify.app/",
-        githubLink: "https://github.com/harshsingh1407/UTube",
+        githubLink: "https://github.com/harshsingh1407/Youtube",
         category: "React Apps",
     },
     {
@@ -42,7 +43,7 @@ const projectsData = [
         tech: "HTML, Bootstrap, JS & Firebase",
         image: quickcart,
         liveLink: "https://quickcart14.netlify.app/",
-        githubLink: "https://github.com/harshsingh1407/QuickCart",
+        githubLink: "https://github.com/harshsingh1407/Quickcart",
         category: "Web Apps",
     },
     {
@@ -78,11 +79,11 @@ const projectsData = [
         category: "Clones",
     },
     {
-        name: "Haldiram's (Website Clone)",
+        name: "Uber Clone",
         tech: "HTML, CSS, Bootstrap & JS",
-        image: haldiram,
-        liveLink: "https://haldiram14.netlify.app/",
-        githubLink: "https://github.com/harshsingh1407/Haldiram",
+        image: uber,
+        liveLink: "https://uber14.netlify.app/",
+        githubLink: "https://github.com/harshsingh1407/uber",
         category: "Clones",
     },
 ];

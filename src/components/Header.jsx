@@ -20,7 +20,7 @@ const Header = () => {
     return (
         <header className='
             fixed top-0 left-0 w-full z-50 
-            bg-slate-850 
+            bg-slate-850 backdrop-blur-2xl
             shadow-xl shadow-slate-950/70
         '>
             <div className='
@@ -41,7 +41,7 @@ const Header = () => {
                                 key={link.name} 
                                 className='
                                     group relative 
-                                    text-gray-300 hover:text-cyan-400 
+                                    text-cyan-500 text-semibold hover:text-cyan-400 
                                     transition-colors duration-300
                                 '
                             >
