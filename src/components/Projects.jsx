@@ -51,7 +51,7 @@ const projectsData = [
         tech: "HTML, CSS, JS & API",
         image: weather,
         liveLink: "https://weatherapp-14.netlify.app/",
-        githubLink: "https://github.com/harshsingh1407/WeatherApp",
+        githubLink: "https://github.com/harshsingh1407/weather",
         category: "Web Apps",
     },
     {
@@ -59,7 +59,7 @@ const projectsData = [
         tech: "HTML, CSS, Bootstrap & JS",
         image: tictactoe,
         liveLink: "https://tictac14.netlify.app/",
-        githubLink: "https://github.com/harshsingh1407/Tic-Tac-Toe",
+        githubLink: "https://github.com/harshsingh1407/tic-tac-toe",
         category: "Games",
     },
     {
