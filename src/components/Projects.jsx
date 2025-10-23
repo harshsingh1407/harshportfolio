@@ -67,7 +67,7 @@ const projectsData = [
         tech: "HTML, CSS, Bootstrap & JS",
         image: rockpaperscissor,
         liveLink: "https://rockpaper14.netlify.app/",
-        githubLink: "https://github.com/harshsingh1407/Rock-Paper-Scissor",
+        githubLink: "https://github.com/harshsingh1407/rock-paper-scissor",
         category: "Games",
     },
     {

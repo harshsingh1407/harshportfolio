@@ -20,13 +20,13 @@ const Header = () => {
     return (
         <header className='
             fixed top-0 left-0 w-full z-50 
-            bg-slate-850 backdrop-blur-2xl
-            shadow-xl shadow-slate-950/70
+            bg-slate-850
+            shadow-xm shadow-slate-950/70
         '>
             <div className='
                 max-w-7xl mx-auto px-6 h-16 
                 flex justify-between items-center 
-                text-white
+                text-white bg-[#1a1a2e]
             '>
                 <div>
                     <h1 className='font-extrabold text-2xl md:text-3xl'>
@@ -41,7 +41,7 @@ const Header = () => {
                                 key={link.name} 
                                 className='
                                     group relative 
-                                    text-cyan-500 text-semibold hover:text-cyan-400 
+                                    text-white text-semibold hover:text-cyan-400 
                                     transition-colors duration-300
                                 '
                             >
@@ -72,7 +72,7 @@ const Header = () => {
                 <div className={`
                     fixed top-16 right-0 h-full w-full
                     bg-slate-750
-                    backdrop-blur-2xl
+                    backdrop-blur-xl
                     shadow-2xl shadow-slate-950/90
                     transition-transform duration-300 ease-in-out
                     z-50
