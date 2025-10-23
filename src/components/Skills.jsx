@@ -10,9 +10,9 @@ const SKILLS_DATA = [
     { name: 'NodeJS', color: 'green-500' },
     { name: 'ExpressJS', color: 'gray-300' },
     { name: 'MongoDB', color: 'green-400' },
+    { name: 'Next.js', color: 'gray-200' },
     { name: 'Git', color: 'red-600' },
     { name: 'GitHub', color: 'gray-400' },
-    { name: 'Next.js', color: 'gray-200' },
 ];
 
 const Skills = () => {
@@ -23,8 +23,7 @@ const Skills = () => {
                 
                 <div data-aos="fade-up" className="mb-12">
                     <h2 className='
-                        text-4xl md:text-5xl font-extrabold text-center 
-                        // कलर ग्रेडिएंट को थोड़ा और गहरा और कंट्रास्ट वाला बनाया
+                        text-4xl md:text-5xl font-extrabold text-center
                         text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-indigo-400
                         mb-4
                     '>
@@ -38,7 +37,7 @@ const Skills = () => {
                 <div 
                     data-aos="fade-up" 
                     data-aos-delay="200"
-                    className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6 py-8' // गैप 4 से 6 किया
+                    className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6 py-8'
                 >
                     {SKILLS_DATA.map((skill, index) => {
                         const brandColorVar = `var(--color-${skill.color.replace('-', '-')})`;
@@ -48,10 +47,9 @@ const Skills = () => {
                                 key={index} 
                                 className={`
                                     group flex items-center justify-center
-                                    // Base Card Look: थोड़ा हल्का काला बैकग्राउंड, बिना बॉर्डर
-                                    bg-slate-800/50 backdrop-blur-sm // हल्का ब्लर इफ़ेक्ट
+                                    bg-slate-800/50 backdrop-blur-sm
                                     text-slate-300 text-lg font-semibold 
-                                    p-4 rounded-xl shadow-2xl // बड़ी शैडो
+                                    p-4 rounded-xl shadow-2xl
                                     cursor-pointer
                                     transition-all duration-300 ease-in-out
                                     transform hover:scale-[1.05] 
@@ -63,8 +61,8 @@ const Skills = () => {
                                 onMouseEnter={(e) => {
                                     e.currentTarget.style.color = brandColorVar;
                                     e.currentTarget.style.boxShadow = `
-                                        0 0 5px 1px ${brandColorVar}C0, /* हल्का इनर ग्लो */
-                                        0 0 15px 3px ${brandColorVar}80  /* बड़ा आउटर ग्लो */
+                                        0 0 5px 1px ${brandColorVar}C0,
+                                        0 0 15px 3px ${brandColorVar}80
                                     `; 
                                     e.currentTarget.style.backgroundColor = '#1e293b'; 
                                 }}

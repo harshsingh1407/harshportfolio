@@ -5,7 +5,7 @@ import resume from '../assets/Harsh_Resume.pdf';
 
 const Home = () => {
     const [typedText, setTypedText] = useState("");
-    const fullText = "A passionate Full-Stack Developer building robust, scalable, and user-centric web applications.";
+    const fullText = "A  passionate Full-Stack Developer building robust, scalable, and user-centric web applications.";
 
     useEffect(() => {
         let index = 0;
@@ -36,10 +36,6 @@ const Home = () => {
             id='home' 
             className='min-h-screen flex justify-center items-center 
                         relative overflow-hidden
-                        // ये classes particles background के पीछे काम नहीं करेंगी, 
-                        // इसलिए बेहतर है कि इन्हें हटा दें अगर आप particles use कर रहे हैं:
-                        // bg-[length:400%_400%] 
-                        // animate-gradient-background
                         font-inter
             '
         >
@@ -79,7 +75,6 @@ const Home = () => {
                                 <button 
                                     className='
                                         w-full
-                                        // Primary Button Style (Bright Gradient)
                                         bg-gradient-to-r from-cyan-600 to-teal-600 hover:from-cyan-500 hover:to-teal-500
                                         text-white 
                                         px-8 py-4 
@@ -100,7 +95,6 @@ const Home = () => {
                                 onClick={scrollToProjects}
                                 className='
                                     w-full sm:w-auto
-                                    // Secondary Button Style (Subtle Dark)
                                     bg-slate-700 hover:bg-slate-600 
                                     text-gray-200 
                                     px-8 py-4

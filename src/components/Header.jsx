@@ -68,7 +68,7 @@ const Header = () => {
                     </button>
                 </div>
 
-                {/* Mobile Sidebar - ismein blur effect joda gaya hai */}
+                {/* Mobile Sidebar */}
                 <div className={`
                     fixed top-16 right-0 h-full w-full
                     bg-slate-750

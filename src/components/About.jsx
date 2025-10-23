@@ -20,7 +20,7 @@ const About = () => {
             </div>
 
             <div className='
-                bg-slate-800/80 backdrop-blur-sm // हल्का पारदर्शी बैकग्राउंड और ब्लर इफ़ेक्ट
+                bg-slate-800/80 backdrop-blur-sm
                 p-8 md:p-12 
                 rounded-xl 
                 shadow-2xl shadow-cyan-900/50 
@@ -32,7 +32,7 @@ const About = () => {
                         leading-relaxed 
                         text-left 
                     '>
-                        Hi, I'm <strong className='text-white font-bold'>Harsh Singh</strong> — a passionate <strong className='text-cyan-400'>Full-Stack Web Developer</strong> focused on crafting clean, responsive, and user-friendly digital experiences. I specialize in the modern web stack, including <strong className='text-cyan-400'>HTML, CSS, Tailwind CSS, JavaScript, React, Next.js, Node.js, and Express</strong>.
+                        Hi, I'm <strong className='text-white font-bold'>Harsh Singh</strong> — a passionate <strong className='text-cyan-400'>Full-Stack Web Developer</strong> focused on crafting clean, responsive, and user-friendly digital experiences. I specialize in the modern web stack, including <strong className='text-cyan-400'>HTML, CSS, Tailwind CSS, JavaScript, React, Next.js, Node.js, Express and MongoDB</strong>.
                         
                         <br /><br />
                         

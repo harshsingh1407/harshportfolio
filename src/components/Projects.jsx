@@ -124,7 +124,7 @@ const Projects = () => {
                                 shadow-xl shadow-slate-900/50
                                 transform transition-all duration-500 
                                 hover:scale-[1.02] hover:shadow-cyan-500/50 
-                                perspective-1000 // For 3D tilt effect
+                                perspective-1000
                             "
                         >
                             <img
@@ -145,12 +145,12 @@ const Projects = () => {
 
                             <div className="
                                 absolute inset-0 
-                                bg-gradient-to-br from-slate-900/70 via-slate-800/70 to-cyan-900/60 // Multi-directional gradient overlay
-                                backdrop-filter backdrop-blur-sm // Glassmorphism effect
+                                bg-gradient-to-br from-slate-900/70 via-slate-800/70 to-cyan-900/60
+                                backdrop-filter backdrop-blur-sm
                                 flex flex-col justify-center items-center text-white 
                                 opacity-0 group-hover:opacity-100 
                                 transition-opacity duration-500
-                                transform group-hover:translate-z-20 // 3D effect
+                                transform group-hover:translate-z-20
                             ">
                                 <h3 className="text-3xl font-black text-cyan-400 mb-3 tracking-wide text-center px-4">{project.name}</h3>
                                 <p className="text-md text-gray-300 mb-5 px-4 text-center">{project.tech}</p>

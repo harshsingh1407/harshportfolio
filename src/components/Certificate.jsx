@@ -62,9 +62,9 @@ const Certificate = () => {
                                 border border-slate-700
                                 shadow-xl shadow-slate-900/70
                                 transform transition-all duration-500 ease-in-out
-                                hover:scale-[1.02] hover:border-cyan-500/70 // Lift effect
-                                hover:shadow-cyan-500/40 // Glow effect
-                                perspective-1000 // Enable 3D effects
+                                hover:scale-[1.02] hover:border-cyan-500/70
+                                hover:shadow-cyan-500/40
+                                perspective-1000
                             '
                         >
                             <div className='relative overflow-hidden'>
@@ -73,10 +73,10 @@ const Certificate = () => {
                                     alt={cert.cname} 
                                     className='
                                         w-full h-auto 
-                                        aspect-video object-cover // Adjusted aspect ratio for better display
+                                        aspect-video object-cover
                                         transition-all duration-500 ease-in-out
-                                        group-hover:scale-110 // Zoom
-                                        group-hover:rotate-1 // Subtle tilt 
+                                        group-hover:scale-110
+                                        group-hover:rotate-1
                                         p-4
                                     '
                                 />
@@ -96,12 +96,12 @@ const Certificate = () => {
                                 rel="noopener noreferrer"
                                 className='
                                     absolute inset-0 
-                                bg-gradient-to-br from-slate-900/70 via-slate-800/70 to-cyan-900/60 // Multi-directional gradient overlay
-                                backdrop-filter backdrop-blur-sm // Glassmorphism effect
+                                bg-gradient-to-br from-slate-900/70 via-slate-800/70 to-cyan-900/60
+                                backdrop-filter backdrop-blur-sm
                                 flex flex-col justify-center items-center text-white 
                                 opacity-0 group-hover:opacity-100 
                                 transition-opacity duration-500
-                                transform group-hover:translate-z-20 // 3D effect
+                                transform group-hover:translate-z-20
                                 '
                             >
                                 <div className='p-6 text-center'>

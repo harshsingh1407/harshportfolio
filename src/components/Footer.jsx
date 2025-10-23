@@ -5,14 +5,13 @@ const Footer = () => {
     <footer className='
         relative 
         bg-transparent 
-        border-t // Subtle separator line
-        border-gray-800 // बॉर्डर को भी कणों के रंग से मेल खाने दें
+        border-t
+        border-gray-800
         text-gray-400 
         py-6 
-        z-10 // z-index को कणों (-1) से ऊपर रखें।
+        z-10
         backdrop-blur-sm 
-            
-            shadow-xl shadow-slate-950/70
+        shadow-xl shadow-slate-950/70
     '>
         <div className='max-w-7xl mx-auto px-6 text-center text-sm md:text-base'>
             
