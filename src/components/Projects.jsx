@@ -12,8 +12,18 @@ import tictactoe from '../assets/tictactoe.png';
 import utube from '../assets/utube.png';
 import interviewedge from '../assets/interviewedge.jpg';
 import uber from '../assets/uber.png'
+import rentfix from '../assets/rentfix.png'
+
 
 const projectsData = [
+    {
+        name: "RentFix",
+        tech: "Next.js & Tailwind",
+        image: rentfix,
+        liveLink: "https://rent-fix.vercel.app/",
+        githubLink: "https://github.com/harshsingh1407/RentFix",
+        category: "Next Apps",
+    },
     {
         name: "InterviewEdge",
         tech: "MERN Stack & Tailwind",
