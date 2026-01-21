@@ -75,7 +75,7 @@ const Certificate = () => {
                             '
                         >
                             <div className='relative overflow-hidden'>
-                                <div className="bg-slate-800 p-4">
+                                <div className="p-3">
                                     <img
                                         src={cert.image}
                                         alt={cert.cname}
