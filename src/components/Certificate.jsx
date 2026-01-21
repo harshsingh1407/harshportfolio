@@ -1,11 +1,12 @@
 import React from 'react';
-import { Award, ExternalLink } from 'lucide-react'; 
+import { Award, ExternalLink } from 'lucide-react';
 
 
 import htmlcertificate from '../assets/html.jpeg';
 import csscertificate from '../assets/css.jpeg';
 import javascriptcertificate from '../assets/javascript.png';
 import reactcertificate from '../assets/reactcertificate.jpg';
+import nodecertificate from '../assets/node.png';
 
 const Certificate = () => {
     const certificates = [
@@ -13,7 +14,7 @@ const Certificate = () => {
             cname: "HTML Fundamentals",
             image: htmlcertificate,
             publisher: "Great Learning",
-            viewLink: "https://www.mygreatlearning.com/certificate/YQZTCCAU?referrer_code=GLCT-LWEZTAGA" 
+            viewLink: "https://www.mygreatlearning.com/certificate/YQZTCCAU?referrer_code=GLCT-LWEZTAGA"
         },
         {
             cname: "CSS Essentials",
@@ -33,12 +34,18 @@ const Certificate = () => {
             publisher: "HackerRank",
             viewLink: "https://www.hackerrank.com/certificates/iframe/2a160f92a90d"
         },
+        {
+            cname: "Node.JS",
+            image: nodecertificate,
+            publisher: "HackerRank",
+            viewLink: "https://www.hackerrank.com/certificates/iframe/e8bcfc823cef"
+        },
     ];
 
     return (
         <div id='certificate' className='bg-slate-950 py-16 md:py-28 px-4 font-inter'>
             <div data-aos="fade-up" className='max-w-7xl mx-auto'>
-                
+
                 <div className='mb-16'>
                     <h1 className='
                         text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-teal-500 
@@ -53,7 +60,7 @@ const Certificate = () => {
 
                 <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8'>
                     {certificates.map((cert, index) => (
-                        <div 
+                        <div
                             key={index}
                             className='
                                 group relative block 
@@ -68,29 +75,31 @@ const Certificate = () => {
                             '
                         >
                             <div className='relative overflow-hidden'>
-                                <img 
-                                    src={cert.image} 
-                                    alt={cert.cname} 
-                                    className='
-                                        w-full h-auto 
-                                        aspect-video object-cover
-                                        transition-all duration-500 ease-in-out
-                                        group-hover:scale-110
-                                        group-hover:rotate-1
-                                        p-4
-                                    '
-                                />
+                                <div className="bg-slate-800 p-4">
+                                    <img
+                                        src={cert.image}
+                                        alt={cert.cname}
+                                        className='
+                                        w-full 
+                                        h-48 
+                                        object-contain
+                                        rounded-lg
+                                        transition-transform duration-500
+                                        group-hover:scale-105
+                                        '
+                                    />
+                                </div>
                             </div>
-                            
+
                             <div className='p-5 border-t border-slate-800'>
                                 <h3 className='text-xl font-bold text-gray-100 mb-1 leading-tight'>{cert.cname}</h3>
                                 <p className='text-sm text-cyan-400 font-semibold flex items-center space-x-2 mt-2'>
-                                    <Award size={18} className="text-teal-500"/>
+                                    <Award size={18} className="text-teal-500" />
                                     <span>{cert.publisher}</span>
                                 </p>
                             </div>
 
-                            <a 
+                            <a
                                 href={cert.viewLink}
                                 target="_blank"
                                 rel="noopener noreferrer"
@@ -106,8 +115,8 @@ const Certificate = () => {
                             >
                                 <div className='p-6 text-center'>
                                     <h3 className="text-3xl font-black text-cyan-400 mb-4 tracking-wide">{cert.cname}</h3>
-                                    
-                                    <button 
+
+                                    <button
                                         className='
                                             bg-cyan-600 hover:bg-cyan-500 
                                             text-white 
